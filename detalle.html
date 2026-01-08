@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de la localidad</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Mi JS -->
+    <script defer type="module" src="./assets/js/detalle.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">El Tiempo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./detalle.html">Detalle</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-4">
+      <section class="row">
+        <div class="col col-lg-8" id="lugar">
+          <h1>El tiempo en:</h1>
+          <!-- Contenido del lugar se mostrará dinámicamente -->
+        </div>
+
+        <div class="col col-lg-4">
+          <h3>Pronóstico semanal</h3>
+
+          <!-- Card pronóstico -->
+          <div class="card">
+            <ul class="list-group list-group-flush" id="pronosticoSemanal">
+              <!-- Pronóstico de la ciudad se mostrará dinámicamente -->
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5">
+        <h3>Estadísticas de la semana</h3>
+        <!-- Temperatura mínima, máxima y promedio de la semana -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Temperatura Mínima</th>
+              <th scope="col">Temperatura Máxima</th>
+              <th scope="col">Promedio Semanal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- Temperaturas de la ciudad se actualizarán dinámicamente -->
+              <td id="minTemp">14°C</td>
+              <td id="maxTemp">32°C</td>
+              <td id="avTemp">28°C</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- TODO: Mensaje de resumen -->
+        <div class="border border-info rounded p-4" id="resumen"></div>
+
+        <table class="table">
+          <thead>
+            <tr id="titulosEstadisticas">
+              <!-- contenido se generará dinámicamente -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="filaEstadistica">
+              <!-- contenido se generará dinámicamente -->
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link px-2 text-body-secondary"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="./detalle.html" class="nav-link px-2 text-body-secondary"
+            >Detalle</a
+          >
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2025 Bootcamp Front End</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@use '../abstracts/variables';
+
+.card {
+  overflow: hidden;
+  &__icon {
+    font-size: 40px;
+    color: variables.$weather-gold;
+    background-color: variables.$weather-navy;
+  }
+}
