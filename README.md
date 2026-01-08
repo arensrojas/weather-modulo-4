@@ -55,3 +55,7 @@ links.forEach(function (link) {
 - [x] Definir al menos dos funciones:
   - [x] Una función para buscar y obtener el objeto lugar a partir de un id o nombre.
   - [x] Una función para calcular estadísticas a partir del pronosticoSemanal de un lugar y devolver un objeto con los resultados.
+
+
+- Repositorio:
+- https://github.com/arensrojas/weather-modulo-4
